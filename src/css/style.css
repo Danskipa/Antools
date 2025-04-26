@@ -1,0 +1,23 @@
+:root {
+  --colorTextAccent: #ff6e30;
+  --colorTextUnderTitle: #ffa537;
+  --colorTextPrimary: #ffffff;
+  --colorBg: #1e252b;
+  --fontPrimary: "Poppins", sans-serif;
+  --fontSecond: "Roboto", sans-serif;
+}
+body {
+  font-family: var(--fontPrimary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.67;
+  color: var(--colorTextPrimary);
+  background-color: var(--colorBg);
+  opacity: 55%;
+}
+/* =========header======== */
+.logo {
+  font-weight: 600;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
