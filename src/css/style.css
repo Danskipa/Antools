@@ -255,6 +255,11 @@ body {
   backdrop-filter: blur(50px);
   background: rgba(44, 53, 61, 0.2);
   margin-left: 108px;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 0, 0, 0.3) 3%,
+    #242b31 10%
+  );
 }
 .trusted-brands-container-title {
   display: flex;
