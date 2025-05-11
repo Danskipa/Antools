@@ -65,7 +65,6 @@ body {
   background-color: var(--colorTextAccent);
   border-radius: 6px;
 }
-/* =======hero======= */
 .hero {
   background-image: url(../../src/img/Illustration2.svg);
   background-repeat: no-repeat;
@@ -149,7 +148,6 @@ body {
   display: flex;
   gap: 30px;
 }
-/* =======Tools======= */
 .tools-container {
   padding-bottom: 200px;
   display: flex;
@@ -224,13 +222,30 @@ body {
   align-items: center;
   gap: 12px;
 }
+.like-checkbox {
+  display: none;
+}
+.like-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/nolike.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  margin-right: 12px;
+}
+.like-checkbox:checked + .like-icon {
+  background-image: url("../img/like.svg");
+}
+
 .tools-article-container-link {
   font-weight: 600;
   font-size: 16px;
   opacity: 55%;
   padding-left: 124px;
 }
-/* =====load-more-button===== */
 .load-more {
   display: flex;
   justify-content: center;
@@ -244,7 +259,6 @@ body {
   background-color: var(--colorBg);
   padding: 17px 38px;
 }
-/* ===========trusted-brands=========== */
 .trusted-brands-container {
   padding-bottom: 200px;
   display: flex;
@@ -257,7 +271,7 @@ body {
   margin-left: 108px;
   background: radial-gradient(
     circle at top left,
-    rgba(255, 0, 0, 0.3) 3%,
+    rgba(255, 41, 34, 0.3) 3%,
     #242b31 10%
   );
 }
@@ -279,7 +293,6 @@ body {
   padding-bottom: 56px;
   width: 1059px;
 }
-/* =========Newcomer========= */
 .newcomer {
   padding-bottom: 194px;
   height: 832px;
@@ -360,8 +373,6 @@ body {
   opacity: 55%;
   padding-left: 66px;
 }
-
-/* ===========testimonial========== */
 .testimonial {
   height: 600px;
   background-image: url(../img/Group1433.svg);
@@ -402,7 +413,6 @@ body {
   padding-top: 50px;
   padding-left: 45px;
 }
-/* =========contributor========= */
 .contributor-container {
   padding-bottom: 240px;
   display: flex;
@@ -464,7 +474,6 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
-/* ========footer======= */
 .footer-line {
   border: none;
   height: 1px;
@@ -517,7 +526,6 @@ body {
   opacity: 90%;
   padding-bottom: 20px;
 }
-
 .contact-text {
   font-size: 16px;
   opacity: 55%;
