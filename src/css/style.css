@@ -15,14 +15,14 @@ body {
   background-color: var(--colorBg);
 }
 .container {
-  padding-inline: 108px;
-  max-width: 1440px;
+  padding-inline: 15px;
+  max-width: 1254px;
+  margin-inline: auto;
 }
 
 /* =========header======== */
 .logo-container {
-  padding-left: 120px;
-  padding-right: 105px;
+  max-width: 1215px;
   padding-top: 26px;
   padding-bottom: 58px;
   display: flex;
@@ -38,13 +38,39 @@ body {
   background-position: center left;
   padding-left: 40px;
 }
-.nav-list {
-  display: flex;
-  gap: 42px;
+.logo:hover {
+  opacity: 70%;
 }
 .nav {
   font-size: 16px;
   opacity: 55%;
+}
+.nav-list {
+  display: flex;
+  gap: 42px;
+}
+.nav-link {
+  font-size: 16px;
+}
+.nav-link:hover {
+  opacity: 35%;
+}
+.nav-link-categories {
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.nav-link-categories::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-image: url(../img/down.svg); /* путь к стрелке */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 .account-list {
   display: flex;
@@ -56,6 +82,9 @@ body {
   font-size: 16px;
   opacity: 78%;
 }
+.account-item:hover {
+  opacity: 50%;
+}
 .account-item2 {
   font-weight: 600;
   font-size: 16px;
@@ -65,6 +94,10 @@ body {
   background-color: var(--colorTextAccent);
   border-radius: 6px;
 }
+.account-item2:hover {
+  opacity: 80%;
+  transform: scale(1.05);
+}
 .hero {
   background-image: url(../../src/img/Illustration2.svg);
   background-repeat: no-repeat;
@@ -72,7 +105,6 @@ body {
   background-size: contain;
 }
 .hero-container {
-  padding-left: 111px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,6 +122,9 @@ body {
   max-width: 600px;
   padding-bottom: 30px;
   padding-top: 46px;
+}
+.hero-title-span {
+  color: var(--colorTextAccent);
 }
 .hero-text {
   font-weight: 400;
@@ -136,6 +171,10 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
+.hero-form button:hover {
+  opacity: 80%;
+  transform: scale(1.05);
+}
 .hero-input {
   font-weight: 400;
 }
@@ -147,6 +186,9 @@ body {
   padding-top: 110px;
   display: flex;
   gap: 30px;
+}
+.hero-link:hover {
+  opacity: 80%;
 }
 .tools-container {
   padding-bottom: 200px;
@@ -189,7 +231,9 @@ body {
 .tools-article-title-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 326px;
+  max-width: 392px;
+  max-height: 360px;
+  padding: 33px;
 }
 .tools-article-title-container-2 {
   display: flex;
@@ -234,16 +278,25 @@ body {
   background-size: contain;
   background-position: center;
   cursor: pointer;
-  margin-right: 12px;
+  margin-right: 17px;
 }
 .tools-like-checkbox:checked + .tools-like-icon {
   background-image: url("../img/like.svg");
+}
+.tools-like-icon:hover {
+  opacity: 60%;
+}
+.tools-icon:hover {
+  opacity: 60%;
 }
 .tools-article-container-link {
   font-weight: 600;
   font-size: 16px;
   opacity: 55%;
-  padding-left: 124px;
+  padding-left: 165px;
+}
+.tools-article-container-link:hover {
+  opacity: 35%;
 }
 .load-more {
   display: flex;
@@ -258,8 +311,14 @@ body {
   background-color: var(--colorBg);
   padding: 17px 38px;
 }
+.load-more-button:hover {
+  color: var(--colorTextPrimary);
+  background-color: var(--colorTextAccent);
+  opacity: 80%;
+}
 .trusted-brands-container {
   padding-bottom: 200px;
+  padding-inline: 68px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -292,15 +351,16 @@ body {
   padding-bottom: 56px;
   width: 1059px;
 }
-.newcomer {
-  padding-bottom: 194px;
-  height: 832px;
+.trusted-brands-item:hover {
+  opacity: 70%;
 }
 .newcomer-container {
-  padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 194px;
   display: flex;
   justify-content: space-between;
-  padding-top: 200px;
+  max-width: 1224px;
+  max-height: 1038px;
 }
 .newcomer-container-title {
   width: 427px;
@@ -325,17 +385,23 @@ body {
   background-color: var(--colorTextAccent);
   padding: 16px 40px;
 }
+.newcomer-button:hover {
+  opacity: 80%;
+  transform: scale(1.05);
+}
 .newcomer-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 50px;
   justify-content: center;
   width: 600px;
   height: 638px;
 }
 .newcomer-item {
-  width: 288px;
-  height: 284px;
+  width: 287px;
+  height: 270px;
+  padding: 21px;
 }
 .newcomer-like-checkbox {
   display: none;
@@ -349,16 +415,25 @@ body {
   background-size: contain;
   background-position: center;
   cursor: pointer;
-  margin-right: 12px;
+  margin-right: 17px;
 }
 .newcomer-like-checkbox:checked + .newcomer-like-icon {
   background-image: url("../img/like.svg");
+}
+.newcomer-like-icon:hover {
+  opacity: 60%;
+}
+.newcomer-icon:hover {
+  opacity: 60%;
 }
 .newcomer-article-container-link {
   font-weight: 600;
   font-size: 16px;
   opacity: 55%;
-  padding-left: 124px;
+  padding-left: 84px;
+}
+.newcomer-article-container-link:hover {
+  opacity: 35%;
 }
 .newcomer-article-title-container {
   display: flex;
@@ -402,6 +477,7 @@ body {
   background-position: center bottom;
 }
 .testimonial-container {
+  padding-left: 172px;
   background-image: url(../img/group1423.svg);
   background-position: center left;
   background-repeat: no-repeat;
@@ -488,6 +564,10 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
+.contributor-form button:hover {
+  opacity: 80%;
+  transform: scale(1.05);
+}
 .contributor-input {
   font-weight: 400;
   opacity: 38%;
@@ -496,11 +576,8 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
-.footer-line {
-  border: none;
-  height: 1px;
-  background-color: #ffffff;
-  margin-top: 70px;
+.footer {
+  border-top: 1px solid #ccc;
 }
 .footer-container {
   padding-top: 70px;
@@ -521,6 +598,9 @@ body {
   padding-left: 50px;
   opacity: 90%;
   padding-bottom: 25px;
+}
+.antools-item:hover {
+  opacity: 45%;
 }
 .antools-text {
   font-size: 16px;
@@ -543,6 +623,9 @@ body {
 .contact-item:nth-child(n + 2) {
   padding-bottom: 10px;
 }
+.contact-item:hover {
+  opacity: 45%;
+}
 .contact-title {
   font-size: 20px;
   opacity: 90%;
@@ -558,6 +641,9 @@ body {
 .categories-item:nth-child(n + 2) {
   padding-bottom: 10px;
 }
+.categories-item:hover {
+  opacity: 45%;
+}
 .categories-title {
   font-size: 20px;
   opacity: 90%;
@@ -572,6 +658,9 @@ body {
 }
 .info-item:nth-child(n + 2) {
   padding-bottom: 10px;
+}
+.info-item:hover {
+  opacity: 45%;
 }
 .info-title {
   font-size: 20px;
