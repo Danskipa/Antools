@@ -326,7 +326,6 @@ body {
   height: 253px;
   backdrop-filter: blur(50px);
   background: rgba(44, 53, 61, 0.2);
-  margin-left: 108px;
   background: radial-gradient(
     circle at top left,
     rgba(255, 41, 34, 0.3) 3%,
