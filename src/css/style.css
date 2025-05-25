@@ -55,6 +55,14 @@ body {
 .nav-link:hover {
   opacity: 35%;
 }
+.hero-item-svg {
+  fill: #fdf5ff;
+  width: 34px;
+  height: 34px;
+}
+.hero-item-svg:hover {
+  fill: #f4f4f433;
+}
 .nav-link-categories {
   font-weight: bold;
   color: white;
