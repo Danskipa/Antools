@@ -678,3 +678,40 @@ body {
   font-size: 16px;
   opacity: 55%;
 }
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.47);
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  inset: 0;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #f2f2f2;
+  position: absolute;
+  min-width: 400px;
+  max-width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+/* .btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+} */
+
+.no-scroll {
+  overflow: hidden;
+}
